@@ -2,16 +2,6 @@
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 /* This is a commnet! */
 
-/* CSS Syntax:
-
-selector {
-	property: value;
-	property: value;
-}
-
-*/
-
-/* Type selector */
 
 p { /* select all <p> */
   font-size: 1em; /* 16px, 7pt, 100%, 12em */
@@ -25,7 +15,7 @@ figcaption {
 	font-family: Georgia, "New Times Roman", serif;
 	font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
 	color: rgba(98.82,114.95,101.90);
-	text-align: right;
+	text-align: middle;
 }
 
 /* Class selectors (applied to as many elements as you like) */
@@ -40,8 +30,7 @@ figcaption {
 /* ID selector (apply to one unique element per page) */
 
 #logo { /* select elements with id="milk-text" */
-    background-color: aqua;
-
+    
 }
 
 /* Descendent Selector */
@@ -70,6 +59,94 @@ figcaption {
 #details a:active {
 	color: red;
 }
+
+/*//////MEDIA ////////*/
+
+img, video, audio {
+	max-width: 100%;
+}
+
+/*///////LAYOUT ////////*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.col-1 {
+	float: left;
+    width: 32%;
+    background: #ccc;
+}
+
+.col-2 {
+	float: left;
+    width: 66%;
+    background: #ccc;
+}
+
+.col-3 {
+	background: #ccc;
+
+}
+
+[class*="col-"] {
+	margin-left: 2%;
+}
+
+.first {
+	margin-left: 0%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+/*///////SECTION ////////*/
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	z-index: 1;
+}
+
+
+section {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+/*///////SOCIAL ////////*/
+
+#social {
+	position: fixed;
+	top: 200px;
+	right: 20px;
+	width: 40px;
+	z-index: 1;
+}
+
+#social a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: yellow;
+}
+
 
 
 
